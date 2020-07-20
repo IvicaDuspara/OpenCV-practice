@@ -1,2 +1,2 @@
 # OpenCV-practice
-Practice in OpenCV
+Details will be filled as I code projects.
