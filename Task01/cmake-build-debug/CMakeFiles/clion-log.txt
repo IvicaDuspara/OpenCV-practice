@@ -1,0 +1,5 @@
+/opt/IDE/CLion/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/imint/CLionProjects/OpenCV-practice/Task01
+-- Found OpenCV: /usr/local/lib/opencv4 (found version "4.3.0") 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/imint/CLionProjects/OpenCV-practice/Task01/cmake-build-debug
