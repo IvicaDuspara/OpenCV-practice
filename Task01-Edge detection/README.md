@@ -1,11 +1,12 @@
 #Task 01 - Edge detection
+
 [1. Running](#Run)
 
 This program shows an example of how image filtering affects
 edge detection.
 
 <a name="Run"></a>
-1. Running
+##Running
 
 Program takes one argument which is:
 + Path to an image you want to test
