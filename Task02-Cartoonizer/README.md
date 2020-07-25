@@ -4,7 +4,15 @@ Cartoonizes an image.
 [1. Running](#Run)
 
 <a name="Run"></a>
-## Running
+##Running
+
+Program takes one argument which is:
++ Path to an image you want to test
++ 1 - Loads first resource image
++ 2 - Loads second resource image
+
 ```
-user@username: ~$ ./Task02
+username@user: ~$ ./Task02 1
 ```
+
+![Alt text](./resources/result1.png "Cartoonization of an image")
