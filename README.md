@@ -5,8 +5,10 @@
 [2. Task 2](#Task2)
 
 <a name="Task1"></a>
-##Task 1 - Edge detection
-
+## Task 1 - Edge detection and highlighter
+Tests effects of blurring on edge detection and highlighting of objects.
 
 <a name="Task2"></a>
-##Task 2 - Cartoonizer
+## Task 2 - Cartoonizer
+
+Cartoonizing filter
