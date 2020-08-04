@@ -1,4 +1,4 @@
-#Task 01 - Edge detection and highlighter
+# Task 01 - Edge detection and highlighter
 
 [1. Running](#Run)
 
@@ -6,7 +6,7 @@ This program shows an example of how image filtering affects
 edge detection.
 
 <a name="Run"></a>
-##Running
+## Running
 
 Program takes two arguments which is:
 1. Path, which can be:
