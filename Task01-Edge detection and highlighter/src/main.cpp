@@ -61,23 +61,23 @@ int main (int argc, char** argv) {
     cv::imshow(w1_name,image1);
     if(temp_mode_arg == "1") {
         cv::createTrackbar("stddev_x",w2_name,&pack1.stddev[0],25,[](int position, void* params){
-            auto* casted = reinterpret_cast<Image_Pack*>(params);
+            auto* casted = static_cast<Image_Pack*>(params);
             casted->stddev[0] = position;
             output_window_mode_1(*casted);
 
         },&pack1);
         cv::createTrackbar("stddev_y",w2_name,&pack1.stddev[1],25,[](int position, void* params){
-            auto* casted = reinterpret_cast<Image_Pack*>(params);
+            auto* casted = static_cast<Image_Pack*>(params);
             casted->stddev[1] = position;
             output_window_mode_1(*casted);
         },&pack1);
         cv::createTrackbar("t1",w2_name,&pack1.threshholds[0],25,[](int position, void* params){
-            auto* casted = reinterpret_cast<Image_Pack*>(params);
+            auto* casted = static_cast<Image_Pack*>(params);
             casted->threshholds[0] = position;
             output_window_mode_1(*casted);
         },&pack1);
         cv::createTrackbar("t2",w2_name,&pack1.threshholds[1],25,[](int position, void* params){
-            auto* casted = reinterpret_cast<Image_Pack*>(params);
+            auto* casted = static_cast<Image_Pack*>(params);
             casted->threshholds[1] = position;
             output_window_mode_1(*casted);
         },&pack1);
@@ -86,17 +86,17 @@ int main (int argc, char** argv) {
     }
     else if(temp_mode_arg == "2") {
         cv::createTrackbar("morph_elem",w2_name,&pack1.stddev[0],5,[](int position, void* params){
-            auto* casted = reinterpret_cast<Image_Pack*>(params);
+            auto* casted = static_cast<Image_Pack*>(params);
             casted->stddev[0] = position;
             output_window_mode_2(*casted);
         },&pack1);
         cv::createTrackbar("morph_size",w2_name,&pack1.stddev[1],21,[](int position, void* params){
-            auto* casted = reinterpret_cast<Image_Pack*>(params);
+            auto* casted = static_cast<Image_Pack*>(params);
             casted->stddev[1] = position;
             output_window_mode_2(*casted);
          },&pack1);
         cv::createTrackbar("iterations",w2_name,&pack1.threshholds[0],10 ,[](int position, void* params){
-            auto* casted = reinterpret_cast<Image_Pack*>(params);
+            auto* casted = static_cast<Image_Pack*>(params);
             casted->threshholds[0] = position;
             output_window_mode_2(*casted);
         },&pack1);
